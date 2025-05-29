@@ -1,7 +1,7 @@
-import { FoolService } from "./services/fool.service";
+import { SecureService } from "./services/secure.service";
 
 const container = {
-    foolService: new FoolService(),
+    secureService: new SecureService(),
 };
 
 export default container;

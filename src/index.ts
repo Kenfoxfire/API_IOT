@@ -1,10 +1,7 @@
 // Imports 
-import express, { Router } from 'express';
-// import morgan from 'morgan';
-// import cors from "cors"
-import { connectDB } from './config/db';
 import { Server } from './presentation/server';
 import { AppRoutes } from './routes/routes';
+import { MongoDatabase } from './data/mongo/mongo-database';
 
 
 
@@ -20,7 +17,7 @@ function main() {
         routes: AppRoutes.routes,
         public_path: 'public',
     });
-    connectDB().then(() => {
+    MongoDatabase.connectDB().then(() => {
         server.start();
     })
 }
