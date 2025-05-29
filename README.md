@@ -9,8 +9,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Kenfoxfire/NodeJS_TS_Template.git
-cd NodeJS_TS_Template
+git clone https://github.com/Kenfoxfire/API_IOT.git
+cd API_IOT
 ```
 
 ### 2. Set env. variables
